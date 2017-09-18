@@ -6,17 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-  <link href="//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700" rel="stylesheet" type="text/css"/>
+  <!--<link href="//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700" rel="stylesheet" type="text/css"/> -->
+  <!-- <script src="jquery-3.2.1.min.js"></script> -->
   <title>Animate.css Sandbox!</title>
 </head>
 
 <body>
   <header>
-    <h1 class="animated flash">Animate me!</h1>
+    <h1 class="animated bounce" id="animateMe">Animate me!</h1>
   </header>
 
   <div class="content">
-    <select>
+    <select onchange="changeClass()" id="selection">
       <optgroup label="Attention Seekers!">
         <option value="bounce">bounce</option>
         <option value="flash">flash</option>
@@ -123,7 +124,7 @@
 
       </optgroup>
     </select>
-    <i>Choose an animation</i>
+  <p style="display: inline"><i>Choose an animation</i></p>
   </div class="content">
   <script src="js/animate.js"></script>
 </body>
